@@ -6,13 +6,12 @@ print(A[1]+'.'+B[1])
 print(A[2]+'.'+B[2])
 
 while True:                                                         ## True 死循环
-    Input1 = input("请输入第一次数字：")
-    Input1 = int(Input1)
+    Input1 = int(input("请输入第一次数字："))                          ## 赋予边
     # 判断 第一次数字大于10 则继续计算
     if Input1 > 10:
         # 声明 Input2为全局变量
         global Input2
-        Input2 = int(input("请输入第二次数字:"))
+        Input2 = int(input("请输入第二次数字："))
         print(Input1 + Input2)
     # 判断 第一次数字等于1 则退出
     elif Input1 == 1:
